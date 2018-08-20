@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  background: #fff url(../src/img/bg2.jpg) no-repeat bottom;
+  background-size: cover;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.root {
+  text-align: center;
+  font-family: 'Forum', cursive;
+}
+
+.main-heading {
+  font-size: 50px;
+  margin-top: 40px;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(50, 50, 50, 0.3);
+}
+
+.intro {
+  font-size: 22px;
+  color: #fff;
+  text-shadow: 1px 2px 5px rgba(50, 50, 50, 0.3);
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 50px auto 0;
+}
+
+.btn.btn-default {
+  font-size: 20px;
+  background: #f2dc18;
+  background: -moz-linear-gradient(
+    -45deg,
+    #f2dc18 1%,
+    #ff1e1e 53%,
+    #bc005e 100%
+  );
+  background: -webkit-linear-gradient(
+    -45deg,
+    #f2dc18 1%,
+    #ff1e1e 53%,
+    #bc005e 100%
+  );
+  background: linear-gradient(135deg, #f2dc18 1%, #ff1e1e 53%, #bc005e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2dc18', endColorstr='#bc005e',GradientType=1 );
+  border: 0;
+  color: #fff;
+  text-transform: uppercase;
+  height: 55px;
+  width: 180px;
+  outline: 0;
+  transition: opacity 0.3s linear;
+  opacity: 0.8;
+  margin-top: 40px;
+}
+
+.btn.btn-default:hover,
+.btn.btn-default:focus {
+  opacity: 1;
+}
+
+.tile {
+  height: 130px;
+  flex-basis: 13%;
+  flex-grow: 1;
+  margin: 1%;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.6);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile:focus {
+  outline: none;
+  border-color: #77b1f9;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: pink;
+}
+.purple {
+  background-color: purple;
+}
+.lightblue {
+  background-color: lightblue;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+.brown {
+  background-color: brown;
+}
+.green {
+  background-color: green;
+}
+
+.tile.hide {
+  background: #000 url(../src/img/abstract.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.tile.off {
+  background-color: #b9b9b9;
+}
+
+.tile.off:hover {
+  transform: none;
+}
+
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  left: 0;
+}
+
+.popup-inner {
+  position: absolute;
+  padding: 50px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 7px 7px 15px 0px rgba(50, 50, 50, 0.75);
+}
+
+.popup h2 {
+  margin-bottom: 30px;
+  font-size: 35px;
+}
+
+.popup .close {
+  font-size: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  outline: none;
+  color: rgb(94, 94, 94);
+  transition: all 0.3s;
+}
+
+.popup .close:hover,
+.popup .close:focus {
+  color: #000;
+}
+
+.popup p {
+  font-size: 20px;
+  color: #000;
+}
+
+@media (max-width: 991px) {
+  .main-heading {
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  .intro {
+    font-size: 17px;
+  }
+  .board {
+    max-width: 500px;
+    margin-top: 20px;
+  }
+  .tile {
+    flex-basis: 28%;
+    margin: 2%;
+    height: 10vh;
+  }
+  .btn.btn-default {
+    margin-top: 20px;
+    font-size: 20px;
+    height: 45px;
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 26px;
+  }
+  .intro {
+    font-size: 14px;
+  }
+  .board {
+    margin-top: 0;
+  }
+  .btn.btn-default {
+    margin-top: 5px;
+    font-size: 17px;
+    height: 40px;
+    width: 150px;
+  }
+  .popup h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+}
