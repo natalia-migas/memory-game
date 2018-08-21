@@ -12,7 +12,7 @@ class Tile extends Component {
         isHidden: true,
         isDisabled: false
       });
-    }, 1000);
+    }, 1500);
   }
 
   componentDidMount() {
