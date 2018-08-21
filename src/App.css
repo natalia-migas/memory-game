@@ -12,7 +12,7 @@ body {
 body {
   overflow-x: hidden;
   position: relative;
-  background: #fff url(../src/img/bg2.jpg) no-repeat bottom;
+  background: #fff url(../src/img/bg2.jpg) no-repeat center;
   background-size: cover;
   height: 100vh;
   -webkit-font-smoothing: antialiased;
@@ -25,7 +25,7 @@ body {
 
 .main-heading {
   font-size: 50px;
-  margin-top: 40px;
+  padding-top: 40px;
   color: #fff;
   text-shadow: 1px 2px 5px rgba(50, 50, 50, 0.3);
 }
@@ -190,7 +190,7 @@ body {
 @media (max-width: 991px) {
   .main-heading {
     font-size: 30px;
-    margin-top: 10px;
+    padding-top: 10px;
   }
   .intro {
     font-size: 17px;
